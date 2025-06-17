@@ -61,3 +61,20 @@ a:hover {
   display: block;
   border: 3px solid #00bfff;
 }
+
+nav {
+  background-color: #1e1e1e;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #00ffcc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
