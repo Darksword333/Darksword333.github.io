@@ -92,7 +92,7 @@ nav a:hover {
   border: 1px solid #00ffcc;
   display: inline-block;
   vertical-align: middle;
-  background-color: #1e1e1e;
+  background-color: #fff;
   padding: 5px;
   border-radius: 5px;
 }
@@ -101,6 +101,14 @@ nav a:hover {
   background: #00bfff22;
   transform: scale(1.05);
   transition: all 0.2s ease;
+}
+
+h3 .tech-icon {
+  width: 40px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .project-title {
@@ -151,6 +159,12 @@ nav a:hover {
   background-color: #fff;
   padding: 5px;
   border-radius: 5px;
+}
+
+.section-card .tech-icon:hover {
+  background: #00bfff22;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 
 .skill-pie {
