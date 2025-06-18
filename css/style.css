@@ -78,3 +78,18 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+.tech-icon {
+  width: 35px;
+  margin: 0 5px;
+  border: 1px solid #00ffcc;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1e1e1e;
+}
+
+.tech-icon:hover {
+  background: #00bfff22;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
