@@ -104,6 +104,15 @@ input:checked + .slider:before {
   transform: translateX(22px);
 }
 
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
 /* ===== Contenu principal ===== */
 h1 {
   color: var(--link-hover-color);
