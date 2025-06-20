@@ -112,7 +112,7 @@ input:checked + .slider:before {
 /* Responsive pour mobile */
 @media screen and (max-width: 600px) {
   .theme-toggle-wrapper {
-    top: 45px;
+    top: 50px;
     right: 15px;
     margin: auto;
     width: max-content;
@@ -362,10 +362,8 @@ h3 .tech-icon {
   --text-color: #222;
   background:
     conic-gradient(var(--fill-color) calc(var(--percent) * 1%), var(--bg-color) 0);
-  /* Modifiez le transform pour qu'il n'affecte pas le layout */
   transform: scale(1) translateZ(0);
   border: 4px solid #727272;
-  /* Compensez l'épaisseur supplémentaire de la bordure avec un margin négatif */
   margin: -1px auto;
   transition: all 0.2s ease;
 }
