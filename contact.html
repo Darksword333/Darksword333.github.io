@@ -3,47 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Contact - Darksword Website</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="icon" type="image/png" href="./image/darkbot.png" />
+    <title>Darksword Website</title>
   </head>
   <body>
-    <div class="theme-switcher">
-      <input type="radio" name="theme" id="dark" checked /> <label for="dark">Sombre</label>
-      <input type="radio" name="theme" id="light" /> <label for="light">Clair</label>
-      <div class="site-content">
-        <nav>
-          <a href="./index.html">Accueil</a>
-          <a href="./projets.html">Projets</a>
-          <a href ="./cv.html">CV</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
-        <h1><a href="./index.html">Darksword Website</a></h1>
-        <a href="./index.html"><img src="./img/darkbot.png" alt="Darkbot Profile Picture" class="profil-img" /></a>
-      
-        <h2>Me contacter</h2>
-      
-        <div class="section-container">
-          <div class="section-card">
-            <img src="./img/discord-brands-solid.svg" class="tech-icon" title="Discord" />
-            <p>Discord : <strong>darksw0rd</strong></p>
-            <p><a href="https://discord.gg/GtMa4gHxC5">Serveur du bot</a></p>
-          </div>
-          <div class="section-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" class="tech-icon" title="LinkedIn" />
-            <p><a href="https://linkedin.com/in/gabriel-mazet-9b089924b">Profil LinkedIn</a></p>
-          </div>
-          <div class="section-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" class="tech-icon" title="Mail" />
-            <p>Mail : <em>à venir</em> (pas encore configuré)</p>
-          </div>
-          <div class="section-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="tech-icon" title="GitHub" />
-            <p><a href="https://github.com/Darksword333">Mon GitHub</a></p>
-          </div>
-        </div>
-        <footer style="text-align: center; margin-top: 50px; font-size: 0.8em;">By Darksword <a href="./contact.html">me Contacter</a></footer>
+    <div class="theme-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle-checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <nav>
+      <a href="./index.html">Accueil</a>
+      <a href="./projets.html">Projets</a>
+      <a href ="./cv.html">CV</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <h1><a href="./index.html">Darksword Website</a></h1>
+    <a href="./index.html"><img src="./img/darkbot.png" alt="Darkbot Profile Picture" class="profil-img" /></a>
+  
+    <h2>Me contacter</h2>
+  
+    <div class="section-container">
+      <div class="section-card">
+        <img src="./img/discord-brands-solid.svg" class="tech-icon" title="Discord" />
+        <p>Discord : <strong>darksw0rd</strong></p>
+        <p><a href="https://discord.gg/GtMa4gHxC5">Serveur du bot</a></p>
+      </div>
+      <div class="section-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" class="tech-icon" title="LinkedIn" />
+        <p><a href="https://linkedin.com/in/gabriel-mazet-9b089924b">Profil LinkedIn</a></p>
+      </div>
+      <div class="section-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" class="tech-icon" title="Mail" />
+        <p>Mail : <em>à venir</em> (pas encore configuré)</p>
+      </div>
+      <div class="section-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="tech-icon" title="GitHub" />
+        <p><a href="https://github.com/Darksword333">Mon GitHub</a></p>
       </div>
     </div>
+    <footer style="text-align: center; margin-top: 50px; font-size: 0.8em;">By Darksword <a href="./contact.html">me Contacter</a></footer>
+  <script type="module" src="./js/change-theme-button.js"></script>
   </body>
 </html>
