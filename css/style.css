@@ -1,31 +1,88 @@
+/* Variables par défaut (mode sombre) */
+:root {
+  --bg-color: #121212;
+  --bg-color2: #1e1e1e;
+  --text-color: #f5f5f5;
+  --text-color2: #00ffcc;
+  --link-color: #00ffcc;
+  --link-hover-color: #00bfff;
+  --border-color: #00ffcc;
+  --skill-bg: #ddd;
+  --skill-fill: #00bfff;
+  --skill-text: #222;
+}
+
 body {
-  background-color: #121212;
-  color: #f5f5f5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.theme-toggle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.theme-toggle label {
+  margin: 0 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.theme-toggle input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Contenu principal */
+.site-content {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 20px;
+}
+
+/* Mode clair activé */
+#light:checked ~ .site-content {
+  --bg-color: #ffffff;
+  --bg-color2: #f0f0f0;
+  --text-color: #121212;
+  --text-color2: #008000;
+  --link-color: #006600;
+  --link-hover-color: #004400;
+  --border-color: #008000;
+  --skill-bg: #bbb;
+  --skill-fill: #007700;
+  --skill-text: #000;
+}
+
+/* Titres */
 h1 {
-  color: #00bfff;
+  color: var(--link-hover-color);
   text-align: center;
 }
 
 h2 {
+  color: var(--text-color2);
   margin-top: 40px;
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid var(--link-hover-color);
   padding-bottom: 5px;
   text-align: center;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 h4 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
+/* Listes */
 ul {
   list-style-type: none;
   padding: 0;
@@ -33,11 +90,13 @@ ul {
 
 li {
   margin-bottom: 30px;
-  background-color: #1e1e1e;
+  background-color: var(--bg-color2);
+  color: var(--text-color);
   padding: 15px;
   border-radius: 10px;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -46,61 +105,68 @@ img {
   border-radius: 10px;
 }
 
+/* Liens */
 a {
-  color: #00ffcc;
+  color: var(--link-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
+/* Image de profil */
 .profil-img {
   width: 200px;
   margin: auto;
   display: block;
-  border: 3px solid #00bfff;
+  border: 3px solid var(--link-hover-color);
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .profil-img:hover {
-  background: #00bfff22;
+  background-color: var(--link-hover-color);
   transform: scale(1.05);
-  transition: all 0.2s ease;
 }
 
+/* Navigation */
 nav {
-  background-color: #1e1e1e;
+  background-color: var(--bg-color2);
   padding: 10px;
   text-align: center;
 }
 
 nav a {
-  color: #00ffcc;
+  color: var(--text-color2);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Icônes tech */
 .tech-icon {
   height: 35px;
   width: auto;
   margin: 0 5px;
-  border: 1px solid #00ffcc;
+  border: 1px solid var(--text-color2);
   display: inline-block;
   vertical-align: middle;
   background-color: #fff;
   padding: 5px;
   border-radius: 5px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .tech-icon:hover {
-  background: #00bfff22;
+  background: var(--link-hover-color);
   transform: scale(1.05);
-  transition: all 0.2s ease;
 }
 
 h3 .tech-icon {
@@ -111,6 +177,7 @@ h3 .tech-icon {
   border-radius: 5px;
 }
 
+/* Projets / sections */
 .project-title {
   display: flex;
   justify-content: center;
@@ -129,8 +196,8 @@ h3 .tech-icon {
 }
 
 .section-card {
-  background-color: #1e1e1e;
-  border: 1px solid #00ffcc;
+  background-color: var(--bg-color2);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 20px;
   width: 250px;
@@ -139,17 +206,19 @@ h3 .tech-icon {
 }
 
 .section-card:hover {
-  background: #00bfff22;
+  background-color: var(--link-hover-color);
   transform: scale(1.05);
 }
 
 .section-card a {
-  color: #00ffcc;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .section-card a:hover {
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
@@ -159,20 +228,21 @@ h3 .tech-icon {
   background-color: #fff;
   padding: 5px;
   border-radius: 5px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .section-card .tech-icon:hover {
-  background: #00bfff22;
+  background-color: var(--link-hover-color);
   transform: scale(1.05);
-  transition: all 0.2s ease;
 }
 
+/* Skill pie chart */
 .skill-pie {
   --size: 80px;
-  --fill-color: #00bfff;
-  --bg-color: #ddd;
-  --text-color: #222;
-  
+  --fill-color: var(--skill-fill);
+  --bg-color: var(--skill-bg);
+  --text-color: var(--skill-text);
+
   width: var(--size);
   height: var(--size);
   margin: auto;
@@ -188,6 +258,7 @@ h3 .tech-icon {
   font-size: 1rem;
   user-select: none;
   border: 3px solid #727272;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 .skill-pie:hover {
@@ -198,4 +269,5 @@ h3 .tech-icon {
     conic-gradient(var(--fill-color) calc(var(--percent) * 1%), var(--bg-color) 0);
   transform: scale(1.05);
   border: 4px solid #727272;
+  transition: all 0.2s ease;
 }

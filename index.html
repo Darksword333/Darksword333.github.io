@@ -3,27 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Darksword Website</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Darksword Website</title>
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Accueil</a>
-      <a href="./projets.html">Projets</a>
-      <a href ="./cv.html">CV</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-    <h1><a href="./index.html">Darksword Website</a></h1>
-    <a href="./index.html"><img src="./img/darkbot.png" alt="Darkbot Profile Picture" class="profil-img" /></a>
-
-    <h2>Sommaire :</h2>
-
-    <ul>
-      <li><h3><a href="./projets.html">Projets Personnels</a></h3></li>
-      <li><h3><a href="./cv.html">CV</a></h3></li>
-      <li><h3><a href="./contact.html">Contact</a></h3></li>
-    </ul>
+    <div class="theme-switcher">
+      <input type="radio" name="theme" id="dark" checked /> <label for="dark">Sombre</label>
+      <input type="radio" name="theme" id="light" /> <label for="light">Clair</label>
+      <div class="site-content">
+        <nav>
+          <a href="./index.html">Accueil</a>
+          <a href="./projets.html">Projets</a>
+          <a href ="./cv.html">CV</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <h1><a href="./index.html">Darksword Website</a></h1>
+        <a href="./index.html"><img src="./img/darkbot.png" alt="Darkbot Profile Picture" class="profil-img" /></a>
+      
+        <h2>Sommaire :</h2>
+      
+        <ul>
+          <li><h3><a href="./projets.html">Projets Personnels</a></h3></li>
+          <li><h3><a href="./cv.html">CV</a></h3></li>
+          <li><h3><a href="./contact.html">Contact</a></h3></li>
+        </ul>
+        <footer style="text-align: center; margin-top: 50px; font-size: 0.8em;">By Darksword <a href="./contact.html">me Contacter</a></footer>
+      </div>
+    </div>
   </body>
-
-  <footer style="text-align: center; margin-top: 50px; font-size: 0.8em;">By Darksword <a href="./contact.html">me Contacter</a></footer>
 </html>
