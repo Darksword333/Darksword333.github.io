@@ -112,7 +112,7 @@ input:checked + .slider:before {
 /* Responsive pour mobile */
 @media screen and (max-width: 600px) {
   .theme-toggle-wrapper {
-    top: 100px;
+    top: 45px;
     right: 15px;
     margin: auto;
     width: max-content;
